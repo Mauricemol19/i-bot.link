@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /vendor/
+Disallow: /custom/
+Disallow: afrekenen.php
+Disallow: 404.php
+Disallow: mollie-webhook.php
+Disallow: packing_slip.php
+Disallow: register.php
+Disallow: verify.php
+Disallow: winkelmand.php
+Disallow: invoice.php
+DIsallow: account.php
+
+Sitemap: https://robertherdermessen.nl/sitemap.xml

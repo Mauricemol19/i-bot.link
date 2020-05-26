@@ -1,0 +1,13 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+#RewriteCond %{HTTP_HOST} !^www\.
+#RewriteCond %{HTTP:X-Forwarded-Proto} !http
+#RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^.*$ ./index.php
+
+#FallbackResource /index.php
